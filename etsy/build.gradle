@@ -24,7 +24,7 @@ dependencies {
 tasks.withType(Test) {
     // run tests with -info or -debug option to get logging
     jvmArgs '-Xms128m', '-Xmx1024m', '-XX:MaxPermSize=128m'    
-    systemProperties['hubIP'] = 'localhost'
+    systemProperties['hubIP'] = '127.0.0.1'
     systemProperties['hubPort'] = '32768'
     systemProperties['testURL'] = 'https://www.etsy.com/'
     systemProperties['windowXPosition'] = '40'
